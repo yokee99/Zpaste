@@ -6,7 +6,7 @@
 
 ## Use:
 
-- download the Binary file [Zpaste] (https://github.com/yokee99/Zpaste/releases).
+- download the Binary file [Zpaste] (https://github.com/yokee99/Zpaste/releases "zpaste").
 - mv it to the ~/usr/local/bin/
 
 ```
