@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ZpasteController.h"
 
-#define HELPMSG "Usage:\n Zpaste <commands> [options]\n\nCommands:\n          help : 显示此界面;\n          run  : 在后台运行;\n          list : 列出剪切板;\n          use  : 需加入参数[option],拷贝\n\nVersion 1.1\n"
+#define HELPMSG "Usage:\n Zpaste <commands> [options]\n\nCommands:\n          help : 显示此界面;\n          run  : 在后台运行;\n          list : 列出剪切板;\n          use  : 需加入参数[option],拷贝\n\nVersion 1.1\nBy yokee99\n"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
