@@ -11,10 +11,12 @@
 
 #import <Foundation/Foundation.h>
 #import <AppKit/NSPasteboard.h>
+#import "Deamon.h"
 
 void list_paste(void);
 void pastemain (void);
-
+id ReadArrayStr (int *arg);
+void WritePasteString(NSString *str );
 
 
 

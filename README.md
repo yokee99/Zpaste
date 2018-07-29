@@ -2,10 +2,7 @@
 -
 ### A command line tool   that list all pasteboard  on Mac OS .
 
-
-
-## Use:
-
+##install:
 - download the Binary file [Zpaste](https://github.com/yokee99/Zpaste/releases "zpaste").
 - mv it to the ~/usr/local/bin/
 
@@ -13,16 +10,24 @@
 $sudo mv ./Zpaste ~/usr/local/bin/
 ```
 
+## Use:
+
+
 - run :
 
 ```
-$Zpaste -d 
+$Zpaste run 
 ```
 
 - list all:
 
 ```
-$Zpaste 
+$Zpaste list
+```
+- copy one of those :
+
+```
+$Zpaste use <number>
 ```
 
 

@@ -9,6 +9,7 @@
 #import "ZpasteController.h"
 
 
+
 void list_paste(void){
     
     
@@ -18,7 +19,7 @@ void list_paste(void){
     for (int i = 0 ; i!=count; i++) {
         id obj = [pastlist objectAtIndex:i];
         printf("\033[;33m[%d]:\033[5m",i);
-        NSLog(@"%@",obj);
+        NSLog(@"\033[;m%@\033[5m\n",obj);
     }
     
     /* 最方便的遍历 由于要输出序号而遗弃
@@ -34,6 +35,32 @@ void list_paste(void){
     
 }
 
+
+
+id ReadArrayStr (int *arg){
+     NSArray *array = [NSArray arrayWithContentsOfFile:@"/tmp/PASTLIST.txt"];
+     NSUInteger count = [array count];
+    
+    NSUInteger tag = (NSUInteger)arg;
+    count--;
+    if (count < tag ) {
+        NSLog(@"\033[;31mCan't found ! , you mast input the number which in \033[;32m[ 0 to %d]\033[5m\033[;31m, please! \033[5m \n",count);
+        exit(250);
+    } else {
+        id obj = [array objectAtIndex:tag];
+        return obj;
+    }
+    
+}
+
+void WritePasteString(NSString *str ){
+    
+    NSPasteboard *willwrite = [NSPasteboard generalPasteboard];
+    [willwrite clearContents];
+    [willwrite writeObjects:@[str]];
+    
+}
+
 void pastemain (void){
     
     NSString *initchar = @"initchar#nuihibgyugfbyhiujkjhgfdsdcvbnjytre";
@@ -42,11 +69,13 @@ void pastemain (void){
     
     make_deamon();
     // alone_run();
+    NSPasteboard *applepastes = [NSPasteboard generalPasteboard];
     
     while(true){
         
+
         
-        NSPasteboard *applepastes = [NSPasteboard generalPasteboard];
+        
         //            NSInteger *tes = [[applepastes types] containsObject:NSPasteboardTypeString];
         NSString *str = [applepastes stringForType:NSPasteboardTypeString];
         

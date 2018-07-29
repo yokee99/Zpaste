@@ -10,7 +10,6 @@
 		21AFA807210CD1950061782F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AFA806210CD1950061782F /* main.m */; };
 		21AFA80F210D405C0061782F /* Deamon.c in Sources */ = {isa = PBXBuildFile; fileRef = 21AFA80E210D405C0061782F /* Deamon.c */; };
 		21AFA814210D50B80061782F /* ZpasteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AFA813210D50B80061782F /* ZpasteController.m */; };
-		21AFA818210D546A0061782F /* ArgFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AFA817210D546A0061782F /* ArgFile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,8 +31,6 @@
 		21AFA80E210D405C0061782F /* Deamon.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Deamon.c; sourceTree = "<group>"; };
 		21AFA813210D50B80061782F /* ZpasteController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZpasteController.m; sourceTree = "<group>"; };
 		21AFA815210D50CC0061782F /* ZpasteController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZpasteController.h; sourceTree = "<group>"; };
-		21AFA816210D546A0061782F /* ArgFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArgFile.h; sourceTree = "<group>"; };
-		21AFA817210D546A0061782F /* ArgFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArgFile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +68,6 @@
 				21AFA80E210D405C0061782F /* Deamon.c */,
 				21AFA813210D50B80061782F /* ZpasteController.m */,
 				21AFA815210D50CC0061782F /* ZpasteController.h */,
-				21AFA816210D546A0061782F /* ArgFile.h */,
-				21AFA817210D546A0061782F /* ArgFile.m */,
 			);
 			path = Zpaste;
 			sourceTree = "<group>";
@@ -133,7 +128,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21AFA818210D546A0061782F /* ArgFile.m in Sources */,
 				21AFA814210D50B80061782F /* ZpasteController.m in Sources */,
 				21AFA807210CD1950061782F /* main.m in Sources */,
 				21AFA80F210D405C0061782F /* Deamon.c in Sources */,

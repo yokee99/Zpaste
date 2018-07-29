@@ -18,7 +18,7 @@
 #import <sys/fcntl.h>
 
 
-#define NSLog(FORMAT, ...) printf("\033[;32m%s\033[5m\n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String])
+#define NSLog(FORMAT, ...) printf("%s", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String])
 
 #define LOCKFILE "/var/run/paste.pid"
 
@@ -37,6 +37,7 @@
  | 45           紫色           35   |
  | 46           青色           36   |
  +---------------------------------+
+        \033[;32m%s\033[5m\n
  */
 
 
